@@ -10,13 +10,30 @@
 ### ***COLUMNAS***
 
 |Columna 1|Columna 2|
-|---------|---------|
-|    A    |    B    |
+|:---     |  :---:  |
+| ~~HOLA~~|   `B`   |
 |    C    |    D    |
 
-### __IMAGEN__ :cow: :rabbit:
-![vaca](https://i.pinimg.com/474x/18/a4/f0/18a4f03c7edf8d8d6a50e41c96b9e271.jpg)
-![Conejo](/Escritorio/imagen1.jpg "imagen1")
+### ***Json Respuesta***
+
+``` Json
+{
+  "firstName": "Angie",
+  "lastName": "Mazo",
+  "age": 19
+}
+```
+
+> ### __IMAGEN__ :cow: :rabbit:
+> ![vaca](https://i.pinimg.com/474x/18/a4/f0/18a4f03c7edf8d8d6a50e41c96b9e271.jpg)
+>
+> #### _Cita_ :cherry_blossom:
+>> *Vacas Pleudas*
 
 ### ***LINKS***
 :busts_in_silhouette: Entrar a *[FACEBOOK](https://www.facebook.com/)*.
+
+### _Cosas Por Hacer_
+- [x] Reunion
+- [ ] Investigar
+- [ ] Practicar
