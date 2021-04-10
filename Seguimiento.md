@@ -6,6 +6,14 @@ Aqui se realizara el seguimiento del proyecto final
 ### Asistentes 
 
 * David Avarez tamayo
+<<<<<<< HEAD
+
+![pinguinos] (http://c.files.bbci.co.uk/15C01/production/_106598098_gettyi33758.jpg)
+
+#### Mi emoji 
+:+1:
+
+=======
 ![imagen1] (https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.bbc.com%2Fmundo%2Fnoticias-48060223&psig=AOvVaw0yQzIBTu4sa2dl9RbN_eNH&ust=1618101974813000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCODEy9658u8CFQAAAAAdAAAAABAD)
 * Julian Rojas Acevedo
 ![LadyMaria] (https://cdna.artstation.com/p/assets/images/images/018/050/700/medium/j-w-syu-ladymaria-color-01.jpg?1558267562)
@@ -13,7 +21,10 @@ Aqui se realizara el seguimiento del proyecto final
 #### Mi Emoji
 :zzz:
 >>>>>>> 5206e32a3b523d7debdfc7998b1058376ccfd5fa
+<<<<<<< HEAD
 * Angie Paola Mazo Morales 
 ! [Imagen] (https://i.pinimg.com/originals/cc/26/8f/cc268f506815668d6c7c9eac60843a06.jpg)
 #### Mi Emoji 
 :heartpulse:
+=======
+>>>>>>> 52f1477613895ff27064438fb80223395728ee67
