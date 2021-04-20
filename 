@@ -1,0 +1,50 @@
+[33mcommit 5206e32a3b523d7debdfc7998b1058376ccfd5fa[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: SaotoGamer13 <rojasjulian402@gmail.com>
+Date:   Sat Apr 10 10:20:45 2021 -0500
+
+    Edicion Archivo Seguimiento MD, Julian
+
+[33mcommit 6f3a44de560109f00d46ff43d111306b7d4d9290[m
+Author: asimov-dat <david.alvareztam@upb.edu.co>
+Date:   Fri Apr 9 19:49:59 2021 -0500
+
+    Edicion archivo Seguimiento.md, agregado nombre david e imagen
+
+[33mcommit 63250440c4375c5e26c24782bd6be75300f168ec[m
+Merge: f2fa856 c28f400
+Author: david alvarez tamayo <72638639+asimov-dat@users.noreply.github.com>
+Date:   Fri Apr 9 19:24:50 2021 -0500
+
+    Merge pull request #1 from angiemazom/patch-1
+    
+    Edición archivo.md
+
+[33mcommit c28f4001d1318431c3b1d917bde4f4525b20e81e[m
+Author: angiemazom <77643098+angiemazom@users.noreply.github.com>
+Date:   Fri Apr 9 19:21:30 2021 -0500
+
+    Edición archivo.md
+
+[33mcommit f2fa856b56e4c7fbe9f431ff6d2ea4382d8f7ecf[m
+Author: asimov-dat <david.alvareztam@upb.edu.co>
+Date:   Wed Apr 7 15:46:48 2021 -0500
+
+    Se creo y edito el archivo Seguimiento.md
+
+[33mcommit 08a88e8e01343db8f8ad2a6ed8de12b8e3dd2256[m
+Author: SaotoGamer13 <82120589+SaotoGamer13@users.noreply.github.com>
+Date:   Wed Apr 7 15:37:25 2021 -0500
+
+    updated README.md con tema del proyecto
+
+[33mcommit 25d4a27cf284403fa21445921f3e851374427c4f[m
+Author: david alvarez tamayo <72638639+asimov-dat@users.noreply.github.com>
+Date:   Wed Apr 7 15:25:25 2021 -0500
+
+    update README.md
+
+[33mcommit 6a809ea3efb6a18e20bb679c9dc667fd51e95782[m
+Author: david alvarez tamayo <72638639+asimov-dat@users.noreply.github.com>
+Date:   Wed Apr 7 15:22:51 2021 -0500
+
+    Initial commit
