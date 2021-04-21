@@ -25,8 +25,10 @@ Aqui se realizara el seguimiento del proyecto final
 :heartpulse:
 =======
 >>>>>>> 52f1477613895ff27064438fb80223395728ee67
-#20/04/21
+# 20/04/21
 ## Menu
-
+ - Se realizara un menu por consola y editara el Seguimiento.md
+### Asistentes
 * Julian Rojas Acevedo
 * Angie Paola Mazo Morales 
+* David alvarez tamayo
