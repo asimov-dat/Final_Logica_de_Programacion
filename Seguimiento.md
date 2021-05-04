@@ -33,12 +33,24 @@ Aqui se realizara el seguimiento del proyecto final
 * Angie Paola Mazo Morales 
 * David alvarez tamayo
 
-#26/04/21
-##Tema
+# 26/04/21
+## Tema
  - se planeo el tema del proyecto que sera un juego donde la cancion se pause y el usuario deba adivinar que sigue en la letra de la cancion
-###Asistentes
+### Asistentes
 * Julian Rojas Acevedo
 * Angie Paola Mazo Morales
 * David Alvarez Tamayo
 
-###Siguiente reunion 28/04/21 6:00 pm
+### Siguiente reunion 28/04/21 6:00 pm
+
+# 04/05/2021 
+## Trabajo durante reunion
+    - Se compartio el menu
+    - Se edito el Seguimiento
+    - Se planeo reunion para: 05/04/2021 en horas de clase
+
+### Asistentes
+* Julian Rojas Acevedo
+* Angie Paola Mazo Morales
+* David Alvarez Tamayo
+-----------------------------------------
