@@ -6,29 +6,29 @@ public class Menu
     public static void mostar_bienbenida()
     {
         String alinearIzquierda = "|  %-15s | %4-4d|%n";
-        System.out.format("+---------------------------+%n");
-        System.out.format("| Bienbenidos al juego Midi |%n");
-        System.out.format("+---------------------------+%n");
-        System.out.format("| Creadores:                |%n");
-        System.out.format("| Angie Paola Mazo          |%n");
-        System.out.format("| Julian Rojas              |%n");
-        System.out.format("| David Alvarez Tamayo      |%n");
-        System.out.format("+---------------------------+%n");
+        System.out.format("     +---------------------------+%n");
+        System.out.format("     | Bienbenidos al juego Midi |%n");
+        System.out.format("     +---------------------------+%n");
+        System.out.format("     | Creadores:                |%n");
+        System.out.format("     | Angie Paola Mazo          |%n");
+        System.out.format("     | Julian Rojas              |%n");
+        System.out.format("     | David Alvarez Tamayo      |%n");
+        System.out.format("     +---------------------------+%n");
     }
     public static void mostar_menu()
     {
-        System.out.format("+---------------------------+%n");
-        System.out.format("|            MENU           |%n");
-        System.out.format("+---------------------------+%n");
-        System.out.format("|   Opciones  |    Numero   |%n");
-        System.out.format("+---------------------------+%n");
-        System.out.format("|   Jugar     |      1      |%n");
-        System.out.format("|   Puntajes  |      2      |%n");
-        System.out.format("|   Escuchar  |      3      |%n");
-        System.out.format("|   Canciones |      4      |%n");
-        System.out.format("|   Letras    |      5      |%n");
-        System.out.format("|   Ayuda     |      6      |%n");
-        System.out.format("+---------------------------+%n");
+        System.out.format("     +---------------------------+%n");
+        System.out.format("     |            MENU           |%n");
+        System.out.format("     +---------------------------+%n");
+        System.out.format("     |   Opciones  |    Numero   |%n");
+        System.out.format("     +---------------------------+%n");
+        System.out.format("     |   Jugar     |      1      |%n");
+        System.out.format("     |   Puntajes  |      2      |%n");
+        System.out.format("     |   Escuchar  |      3      |%n");
+        System.out.format("     |   Canciones |      4      |%n");
+        System.out.format("     |   Letras    |      5      |%n");
+        System.out.format("     |   Ayuda     |      6      |%n");
+        System.out.format("     +---------------------------+%n");
     }
     public static void opcion_menu(byte i)
     {
