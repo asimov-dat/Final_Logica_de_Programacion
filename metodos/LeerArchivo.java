@@ -52,7 +52,7 @@ public class LeerArchivo
         
         for(int i=0;i<letra.length;i++){
             System.out.println(letra[i]);
-            Thread.sleep(800);
+            Thread.sleep(200);
         }
     }
 

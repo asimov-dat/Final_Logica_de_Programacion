@@ -30,7 +30,7 @@ public void Stop() throws Exception {
 public static void main(String args[]){
 try {
   Reproductor mi_reproductor = new Reproductor();
-  mi_reproductor.AbrirFichero("\archivos\La_camisa_negra.mid");
+  mi_reproductor.AbrirFichero("../archivos/a_camisa_negra.mid");
   mi_reproductor.Play();
 } catch (Exception ex) {
   System.out.println("Error: " + ex.getMessage());
