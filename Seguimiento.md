@@ -60,7 +60,7 @@ Aqui se realizara el seguimiento del proyecto final
  - Solucion de Problemas con la clase reproductor 
  - asignacion de actividades
  - discucion de problemas
-    * Convinar reproductor y letras 
+    * Conbinar reproductor y letras 
     * Pausar letras 
     * Como hacer los puntos
 
