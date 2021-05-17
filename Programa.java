@@ -1,5 +1,7 @@
 import metodos.Menu;
+import metodos.LeerArchivo;
 import java.util.Scanner;
+import java.io.*;
 
 public class Programa
 {
@@ -13,15 +15,23 @@ public class Programa
         Menu.mostar_menu();
         
         opcionN = uInput.nextByte();
-        if(opcionN == 127)
+        if(opcionN != 127)
         {
+            do 
+            {
+                Menu.opcion_menu(opcionN);
+                System.out.println("\n");
+                Menu.mostar_menu();
+                opcionN = uInput.nextByte();
+            }while(opcionN != 7);
+            
+        }
+        else{
             uInput.nextLine();
             opcionS = uInput.nextLine();
             Menu.opcion_menu(opcionS);
         }
-        else{
-            Menu.opcion_menu(opcionN);
-        }
+            
         
         uInput.nextLine();
         uInput.nextLine();

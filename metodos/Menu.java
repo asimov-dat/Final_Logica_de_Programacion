@@ -42,7 +42,9 @@ public class Menu
                     break;
                 case 3 : System.out.println("Aqui se escucharian los Midi");
                     break;
-                case 4 : System.out.println("Aqui se listan las canciones");
+                case 4 : Directorios.imprimirCarpetaCanciones();
+                        System.out.println();
+                        Directorios.imprimirNumeroCanciones();
                     break;
                 case 5 : System.out.println("Aqui se Muestran las letras");
                     break;
