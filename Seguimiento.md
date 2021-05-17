@@ -45,12 +45,30 @@ Aqui se realizara el seguimiento del proyecto final
 
 # 04/05/2021 
 ## Trabajo durante reunion
-    - Se compartio el menu
-    - Se edito el Seguimiento
-    - Se planeo reunion para: 05/04/2021 en horas de clase
+ - Se compartio el menu
+ - Se edito el Seguimiento
+ - Se planeo reunion para: 05/04/2021 en horas de clase
 
 ### Asistentes
 * Julian Rojas Acevedo
 * Angie Paola Mazo Morales
 * David Alvarez Tamayo
 -----------------------------------------
+# 12/05/2021
+
+## Tema
+ - Solucion de Problemas con la clase reproductor 
+ - asignacion de actividades
+ - discucion de problemas
+    * Conbinar reproductor y letras 
+    * Pausar letras 
+    * Como hacer los puntos
+
+### asistentes
+ [x] Julian Rojas Acevedo
+ [x] Angie Paola Mazo Morales
+ [x] David Alvarez Tamayo
+
+ ------------------------------------------
+
+
