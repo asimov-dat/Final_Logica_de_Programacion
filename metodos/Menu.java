@@ -1,4 +1,5 @@
 package metodos;
+import java.util.Scanner;
 
 public class Menu
 {
@@ -28,10 +29,12 @@ public class Menu
         System.out.format("     |   Canciones |      4      |%n");
         System.out.format("     |   Letras    |      5      |%n");
         System.out.format("     |   Ayuda     |      6      |%n");
+        System.out.format("     |   Salir     |      7      |%n");
         System.out.format("     +---------------------------+%n");
     }
     public static void opcion_menu(byte i)
     {
+        Scanner uInput = new Scanner(System.in);
         if (i <= 6)
         {
             switch(i)
@@ -42,11 +45,16 @@ public class Menu
                     break;
                 case 3 : System.out.println("Aqui se escucharian los Midi");
                     break;
-                case 4 : Directorios.imprimirCarpetaCanciones();
+                case 4 : System.out.println(); 
+                        Directorios.imprimirCarpetaCanciones();
                         System.out.println();
                         Directorios.imprimirNumeroCanciones();
                     break;
-                case 5 : System.out.println("Aqui se Muestran las letras");
+                case 5 : System.out.println();
+                        LeerArchivo.imprimirListaCanciones();
+                        System.out.print("     $ ");
+                        int opcionLetraCancion = uInput.nextByte();
+                        LeerArchivo.imprimirLetraCancion(opcionLetraCancion);
                     break;
                 case 6 : System.out.println("Aqui se mostrara ayuda adicional");
                     break;
