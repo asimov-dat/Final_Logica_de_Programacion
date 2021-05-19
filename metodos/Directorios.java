@@ -15,6 +15,6 @@ public class Directorios
     }
     public static void imprimirNumeroCanciones()
     {
-        System.out.println("Numero de canciones : "+canciones.length);
+        System.out.println("Numero de canciones: "+canciones.length);
     }
 }
