@@ -48,7 +48,7 @@ public class Menu
                     break;
                 case 5 : System.out.println("Aqui se Muestran las letras");
                     break;
-                case 6 : System.out.println("Aqui se mostrara ayuda adicional");
+                case 6 : System.out.println("Aqui se mostrara la ayuda requerida por el usuario");
                     break;
             }
         }
