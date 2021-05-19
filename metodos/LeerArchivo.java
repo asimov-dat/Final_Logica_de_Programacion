@@ -80,7 +80,14 @@ public class LeerArchivo
         
         for(int i=0;i<cancion.length;i++)
         {
-            System.out.println(cancion[i]);
+            System.out.print(espacio+cancion[i]+" ");
+            System.out.println();
+            try
+            {
+                Thread.sleep(10);
+            }catch(Exception error){
+                System.out.println("Error: "+error);
+            }
         }
     }
 }
