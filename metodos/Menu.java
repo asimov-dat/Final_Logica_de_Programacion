@@ -50,13 +50,17 @@ public class Menu
                         System.out.println();
                         Directorios.imprimirNumeroCanciones();
                     break;
+<<<<<<< HEAD
                 case 5 : System.out.println();
                         LeerArchivo.imprimirListaCanciones();
                         System.out.print("     $ ");
                         int opcionLetraCancion = uInput.nextByte();
                         LeerArchivo.imprimirLetraCancion(opcionLetraCancion);
+=======
+                case 5 : System.out.println("Aqui se muestran la letra de las canciones");
+>>>>>>> e7487a3f7cffa856a7f5e2439004d8c9773baedd
                     break;
-                case 6 : System.out.println("Aqui se mostrara ayuda adicional");
+                case 6 : System.out.println("Aqui se mostrara la ayuda requerida por el usuario.");
                     break;
             }
         }
