@@ -22,10 +22,6 @@ public class Directorios
     }
     public static void imprimirNumeroCanciones()
     {
-<<<<<<< HEAD
         System.out.println(espacio+"Numero de canciones : "+canciones.length);
-=======
-        System.out.println("Numero de canciones: "+canciones.length);
->>>>>>> 334f48a061b928e95ffb2e2354604686f6747f00
     }
 }
