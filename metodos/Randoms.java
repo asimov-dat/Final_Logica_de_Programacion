@@ -9,11 +9,13 @@ public class Randoms {
     
     public static int random_letra(String letra[]) {
         int random = 0;
-        int mayor= 0;
-        
+        int mayor = 0;
+        String respuesta = "";
+
         mayor = letra.length;
         random =(int)Math.floor(Math.random()*(mayor-0+1)+0);
-        System.out.println(random);
+        respuesta = letra[random];
+        letra[random] = "???"
         
         return random;
     }
