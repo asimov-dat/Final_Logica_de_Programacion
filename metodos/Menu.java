@@ -46,7 +46,7 @@ public class Menu
                         System.out.println();
                         Directorios.imprimirNumeroCanciones();
                     break;
-                case 5 : System.out.println("Aqui se Muestran las letras");
+                case 5 : System.out.println("Aqui se muestran la letra de las canciones");
                     break;
                 case 6 : System.out.println("Aqui se mostrara la ayuda requerida por el usuario");
                     break;
