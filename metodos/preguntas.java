@@ -16,7 +16,9 @@ public class preguntas {
             System.out.print(letra);
             entrada.nextLine();
             respuestaU = entrada.nextLine();
-            
+            if (Randoms.respuesta==respuestaU){
+                correctas++;
+            }
         }
         
         return correctas;
