@@ -21,3 +21,24 @@ public class Menu
         System.out.format("     ╚═╝░░╚═╝           ░░░╚═╝░░░╚══════╝╚═╝░░╚═╝╚═╝░░░░░╚═╝░╚═════╝░░░░╚═╝░░░╚══════╝╚═╝░░╚══╝");
 
     }
+
+    public static void mostar_menu()
+    {
+    System.out.println("                                         __________________________________                                                                                   |                                                                                           |" );
+  System.out.println("                                         |    ____  ____  ____  ____      |");
+  System.out.println("                                         |    ||M ||||E ||||N ||||U ||    |  ");
+  System.out.println("                                         |    ||__||||__||||__||||__||    | ");
+  System.out.println("                                         |    |/__\||/__\||/__\||/__\|    | ");
+  System.out.println("                             ____________|                                |____________");
+    imprimir("	                                 |                                                         |");
+    imprimir("	                                 |                 INGRESE UNA OPCIÓN:           		   |");
+    imprimir("	                                 |                 1. Jugar                      	       |");
+    imprimir("	                                 |                 2. Puntajes           			       |");
+    imprimir("	                                 |                 3. Escuchar               			   |");
+    imprimir("	                                 |                 4. Canciones              		       |");
+    imprimir("	                                 |                 5. Letras  		                       |");
+    imprimir("	                                 |                 6. Ayuda					               |");
+    System.out.println("	                     |_________________________________________________________|");
+
+
+    }
