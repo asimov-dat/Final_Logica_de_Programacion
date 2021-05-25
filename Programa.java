@@ -14,6 +14,7 @@ public class Programa
         Menu.mostar_bienbenida();
         Menu.mostar_menu();
         
+        System.out.print("     $ ");
         opcionN = uInput.nextByte();
         if(opcionN != 127)
         {
@@ -22,6 +23,7 @@ public class Programa
                 Menu.opcion_menu(opcionN);
                 System.out.println("\n");
                 Menu.mostar_menu();
+                System.out.print("     $ ");
                 opcionN = uInput.nextByte();
             }while(opcionN != 7);
             
