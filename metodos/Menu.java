@@ -3,11 +3,11 @@ package metodos;
 public class Menu
 {
     String opcionS="";
-    public static void mostar_bienbenida()
+    public static void mostar_bienvenida()
     {
         String alinearIzquierda = "|  %-15s | %4-4d|%n";
         System.out.format("     +---------------------------+%n");
-        System.out.format("     | Bienbenidos al juego Midi |%n");
+        System.out.format("     | Bienvenidos al juego Midi |%n");
         System.out.format("     +---------------------------+%n");
         System.out.format("     | Creadores:                |%n");
         System.out.format("     | Angie Paola Mazo          |%n");
