@@ -2,6 +2,8 @@ import metodos.Menu;
 import metodos.LeerArchivo;
 import java.util.Scanner;
 import java.io.*;
+import metodos.Audio;
+import metodos.Juego;
 
 public class Programa
 {
@@ -10,7 +12,9 @@ public class Programa
         Scanner uInput = new Scanner(System.in);
         String opcionS;
         byte opcionN = 0;
+        Audio audio = new Audio();
 
+        /*
         Menu.mostar_bienbenida();
         Menu.mostar_menu();
         
@@ -33,8 +37,10 @@ public class Programa
             opcionS = uInput.nextLine();
             Menu.opcion_menu(opcionS);
         }
-            
+        */
         
+        Juego.seleccionCancion();
+
         uInput.nextLine();
         uInput.nextLine();
     }

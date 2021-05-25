@@ -49,6 +49,14 @@ public class Menu
                         Directorios.imprimirCarpetaCanciones();
                         System.out.println();
                         Directorios.imprimirNumeroCanciones();
+                        System.out.print("     $ Ingrese el numero de la cancion: ");
+                        int numeroCancion = uInput.nextByte();
+                        System.out.println();
+                        Directorios.reproducirCancion(numeroCancion);
+                        Directorios.menuCanciones();
+                        System.out.print("     $ ");
+                        byte numero = uInput.nextByte();
+                        Directorios.menuCanciones(numero);
                     break;
                 case 5 : System.out.println();
                         LeerArchivo.imprimirListaCanciones();

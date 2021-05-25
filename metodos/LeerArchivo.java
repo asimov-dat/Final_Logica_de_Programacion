@@ -90,4 +90,23 @@ public class LeerArchivo
             }
         }
     }
+
+     public static void imprimirLetraCancion(int opcionCancion,int tempo)
+    {
+        String[] cancion = new String[arrLetra[opcionCancion].length()];
+
+        cancion = letraCancion(arrLetra,opcionCancion);
+        
+        for(int i=0;i<cancion.length;i++)
+        {
+            System.out.print(espacio+cancion[i]+" ");
+            System.out.println();
+            try
+            {
+                Thread.sleep(tempo);
+            }catch(Exception error){
+                System.out.println("Error: "+error);
+            }
+        }
+    }
 }
