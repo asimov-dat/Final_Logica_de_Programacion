@@ -10,6 +10,7 @@ public class LeerArchivo
     static String strLetra = crearLetraCancion();
     static String[] arrLetra = crearArrayLetra(strLetra);
     static String espacio = "     ";
+    static Scanner uInput = new Scanner(System.in);
 
     public static String crearLetraCancion()
     {
@@ -94,19 +95,69 @@ public class LeerArchivo
      public static void imprimirLetraCancion(int opcionCancion,int tempo)
     {
         String[] cancion = new String[arrLetra[opcionCancion].length()];
+        String opcionLetraJuego="";
 
         cancion = letraCancion(arrLetra,opcionCancion);
-        
-        for(int i=0;i<cancion.length;i++)
+        int i=-1;
+        int decicion=0;
+        do
         {
-            System.out.print(espacio+cancion[i]+" ");
-            System.out.println();
+            if(i<5)
+            {
+                i++;
+                System.out.println(espacio+cancion[i]);
+            }else{
+                decicion = Juego.random(1,5);
+                switch(decicion)
+                {
+                    case 1 : i++;
+                                    System.out.print(espacio+cancion[i]+" ");
+                                    i++;
+                                    System.out.print(cancion[i]+" ");
+                                    i++;
+                                    System.out.print(espacio+"[missing]");
+                                    opcionLetraJuego = cancion[i];
+                                    i++;
+                                    System.out.print(espacio+cancion[i]+" ");
+                                    i++;
+                                    System.out.print(cancion[i]+" ");
+                                    System.out.println();
+                                    Juego.jugar(opcionLetraJuego);
+                        break;
+                    case 2,3,4,5 : i++;
+                                    System.out.print(espacio+cancion[i]+" ");
+                                    i++;
+                                    System.out.print(cancion[i]+" ");
+                                    i++;
+                                    System.out.print(cancion[i]+" ");
+                                    i++;
+                                    System.out.print(cancion[i]+" ");
+                                    i++;
+                                    System.out.print(cancion[i]+" ");
+                                    System.out.println();
+                        break;
+                } 
+                /* 
+                i++;
+                System.out.print(espacio+cancion[i]+" ");
+                i++;
+                System.out.print(cancion[i]+" ");
+                i++;
+                System.out.print(espacio+"[missing]");
+                opcionLetraJuego = cancion[i];
+                i++;
+                System.out.print(espacio+cancion[i]+" ");
+                i++;
+                System.out.print(cancion[i]+" ");
+                System.out.println();
+                Juego.jugar(opcionLetraJuego);*/
+            }
             try
             {
                 Thread.sleep(tempo);
             }catch(Exception error){
                 System.out.println("Error: "+error);
             }
-        }
+        }while(i<cancion.length-5);
     }
 }

@@ -12,7 +12,7 @@ public class Audio extends Thread{
 	
 	//https://docs.oracle.com/javase/7/docs/api/javax/sound/midi/Sequencer.html
 	private String sonido;	
-	private Sequencer sequencer;
+	public static Sequencer sequencer;
 	private boolean esta_reproduciendose;
 	private long tiempo;
 
