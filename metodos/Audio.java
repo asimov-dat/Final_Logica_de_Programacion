@@ -13,7 +13,7 @@ public class Audio extends Thread{
 	//https://docs.oracle.com/javase/7/docs/api/javax/sound/midi/Sequencer.html
 	private String sonido;	
 	public static Sequencer sequencer;
-	private boolean esta_reproduciendose;
+	private static boolean esta_reproduciendose;
 	private long tiempo;
 
 	public void seleccionarCancion(String ruta_cancion){
@@ -56,7 +56,7 @@ public class Audio extends Thread{
 		}
 	}
 
-	public void detener(){
+	public static void detener(){
 		if(sequencer!=null)
     	{
         	if(sequencer.isOpen())
@@ -109,14 +109,14 @@ public class Audio extends Thread{
 		}
 	}
 
-	public long pausar()
+	public static long pausar()
 	{
 		long pausaPosition = sequencer.getMicrosecondPosition();
 		sequencer.stop();
 		return pausaPosition;
 	}
 
-	public void continuar(long pausaPosition)
+	public static void continuar(long pausaPosition)
 	{
 		sequencer.setMicrosecondPosition(pausaPosition);
 		sequencer.start();

@@ -100,60 +100,53 @@ public class LeerArchivo
         cancion = letraCancion(arrLetra,opcionCancion);
         int i=-1;
         int decicion=0;
+        long position = 0;
         do
-        {
-            if(i<5)
-            {
-                i++;
-                System.out.println(espacio+cancion[i]);
-            }else{
-                decicion = Juego.random(1,5);
-                switch(decicion)
-                {
-                    case 1 : i++;
-                                    System.out.print(espacio+cancion[i]+" ");
-                                    i++;
-                                    System.out.print(cancion[i]+" ");
-                                    i++;
-                                    System.out.print(espacio+"[missing]");
-                                    opcionLetraJuego = cancion[i];
-                                    i++;
-                                    System.out.print(espacio+cancion[i]+" ");
-                                    i++;
-                                    System.out.print(cancion[i]+" ");
-                                    System.out.println();
-                                    Juego.jugar(opcionLetraJuego);
-                        break;
-                    case 2,3,4,5 : i++;
-                                    System.out.print(espacio+cancion[i]+" ");
-                                    i++;
-                                    System.out.print(cancion[i]+" ");
-                                    i++;
-                                    System.out.print(cancion[i]+" ");
-                                    i++;
-                                    System.out.print(cancion[i]+" ");
-                                    i++;
-                                    System.out.print(cancion[i]+" ");
-                                    System.out.println();
-                        break;
-                } 
-                /* 
-                i++;
-                System.out.print(espacio+cancion[i]+" ");
-                i++;
-                System.out.print(cancion[i]+" ");
-                i++;
-                System.out.print(espacio+"[missing]");
-                opcionLetraJuego = cancion[i];
-                i++;
-                System.out.print(espacio+cancion[i]+" ");
-                i++;
-                System.out.print(cancion[i]+" ");
-                System.out.println();
-                Juego.jugar(opcionLetraJuego);*/
-            }
+        {   
             try
             {
+                if(i<5)
+                {
+                    i++;
+                    System.out.println(espacio+cancion[i]);
+                }else{
+                    decicion = Juego.random(1,5);
+                    switch(decicion)
+                    {
+                        case 1 : i++;
+                                        System.out.print(espacio+cancion[i]+" ");
+                                        i++;
+                                        System.out.print(cancion[i]+" ");
+                                        i++;
+                                        System.out.print(espacio+"[missing]");
+                                        opcionLetraJuego = cancion[i];
+                                        i++;
+                                        System.out.print(espacio+cancion[i]+" ");
+                                        i++;
+                                        System.out.print(cancion[i]+" ");
+                                        System.out.println();
+                                        position = Audio.pausar();
+                                        Juego.jugar(opcionLetraJuego);
+                                        Audio.continuar(position);
+                            break;
+                        case 2,3,4,5 : i++;
+                                        System.out.print(espacio+cancion[i]+" ");
+                                        i++;
+                                        Thread.sleep(100);
+                                        System.out.print(cancion[i]+" ");
+                                        i++;
+                                        Thread.sleep(100);
+                                        System.out.print(cancion[i]+" ");
+                                        i++;
+                                        Thread.sleep(100);
+                                        System.out.print(cancion[i]+" ");
+                                        i++;
+                                        Thread.sleep(100);
+                                        System.out.print(cancion[i]+" ");
+                                        System.out.println();
+                            break;
+                    }
+                }
                 Thread.sleep(tempo);
             }catch(Exception error){
                 System.out.println("Error: "+error);

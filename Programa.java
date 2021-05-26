@@ -14,8 +14,8 @@ public class Programa
         byte opcionN = 0;
         Audio audio = new Audio();
 
-        /*
-        Menu.mostar_bienbenida();
+        
+        Menu.mostar_bienvenida();
         Menu.mostar_menu();
         
         System.out.print("     $ ");
@@ -37,9 +37,7 @@ public class Programa
             opcionS = uInput.nextLine();
             Menu.opcion_menu(opcionS);
         }
-        */
         
-        Juego.seleccionCancion();
 
         uInput.nextLine();
         uInput.nextLine();

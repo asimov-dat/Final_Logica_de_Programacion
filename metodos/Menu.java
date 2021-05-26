@@ -39,7 +39,7 @@ public class Menu
         {
             switch(i)
             {
-                case 1 : System.out.println("Aqui se iniciaria el juego");
+                case 1 : Juego.seleccionCancion();
                     break;
                 case 2 : System.out.println("Aqui se verian los puntajes");
                     break;
