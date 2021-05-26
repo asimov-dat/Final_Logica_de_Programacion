@@ -1,44 +1,46 @@
 package metodos;
 
-public class Menu
+public class Ascii
 {
     String opcionS="";
-    public static void mostar_bienbenida()
+    static String espacio = "     ";
+    public static void bienvenida()
     {
         String alinearIzquierda = "|  %-15s | %4-4d|%n";
-        System.out.format("██████╗░██╗███████╗███╗░░██╗██╗░░░██╗███████╗███╗░░██╗██╗██████╗░░█████╗░░██████╗");
-        System.out.format("██╔══██╗██║██╔════╝████╗░██║██║░░░██║██╔════╝████╗░██║██║██╔══██╗██╔══██╗██╔════╝");
-        System.out.format("██████╦╝██║█████╗░░██╔██╗██║╚██╗░██╔╝█████╗░░██╔██╗██║██║██║░░██║██║░░██║╚█████╗░");
-        System.out.format("██╔══██╗██║██╔══╝░░██║╚████║░╚████╔╝░██╔══╝░░██║╚████║██║██║░░██║██║░░██║░╚═══██╗");
-        System.out.format("██████╦╝██║███████╗██║░╚███║░░╚██╔╝░░███████╗██║░╚███║██║██████╔╝╚█████╔╝██████╔╝");
-        System.out.format("╚═════╝░╚═╝╚══════╝╚═╝░░╚══╝░░░╚═╝░░░╚══════╝╚═╝░░╚══╝╚═╝╚═════╝░░╚════╝░╚═════╝░");
-        System.out.format("                                                                                               ");
-        System.out.format("     ░█████╗░           ██╗░░░██╗███████╗██████╗░███╗░░░███╗██╗░░░██╗████████╗███████╗███╗░░██╗");
-        System.out.format("     ██╔══██╗           ██║░░░██║██╔════╝██╔══██╗████╗░████║██║░░░██║╚══██╔══╝██╔════╝████╗░██║");
-        System.out.format("     ███████║           ╚██╗░██╔╝█████╗░░██████╔╝██╔████╔██║██║░░░██║░░░██║░░░█████╗░░██╔██╗██║");
-        System.out.format("     ██╔══██║           ░╚████╔╝░██╔══╝░░██╔══██╗██║╚██╔╝██║██║░░░██║░░░██║░░░██╔══╝░░██║╚████║");
-        System.out.format("     ██║░░██║           ░░╚██╔╝░░███████╗██║░░██║██║░╚═╝░██║╚██████╔╝░░░██║░░░███████╗██║░╚███║");
-        System.out.format("     ╚═╝░░╚═╝           ░░░╚═╝░░░╚══════╝╚═╝░░╚═╝╚═╝░░░░░╚═╝░╚═════╝░░░░╚═╝░░░╚══════╝╚═╝░░╚══╝");
+        System.out.format(espacio+espacio+espacio+"██████╗░██╗███████╗███╗░░██╗██╗░░░██╗███████╗███╗░░██╗██╗██████╗░░█████╗░░██████╗%n");
+        System.out.format(espacio+espacio+espacio+"██╔══██╗██║██╔════╝████╗░██║██║░░░██║██╔════╝████╗░██║██║██╔══██╗██╔══██╗██╔════╝%n");
+        System.out.format(espacio+espacio+espacio+"██████╦╝██║█████╗░░██╔██╗██║╚██╗░██╔╝█████╗░░██╔██╗██║██║██║░░██║██║░░██║╚█████╗░%n");
+        System.out.format(espacio+espacio+espacio+"██╔══██╗██║██╔══╝░░██║╚████║░╚████╔╝░██╔══╝░░██║╚████║██║██║░░██║██║░░██║░╚═══██╗%n");
+        System.out.format(espacio+espacio+espacio+"██████╦╝██║███████╗██║░╚███║░░╚██╔╝░░███████╗██║░╚███║██║██████╔╝╚█████╔╝██████╔╝%n");
+        System.out.format(espacio+espacio+espacio+"╚═════╝░╚═╝╚══════╝╚═╝░░╚══╝░░░╚═╝░░░╚══════╝╚═╝░░╚══╝╚═╝╚═════╝░░╚════╝░╚═════╝░%n");
+        System.out.format(espacio+"                                                                                               %n");
+        System.out.format(espacio+"     ░█████╗░           ██╗░░░██╗███████╗██████╗░███╗░░░███╗██╗░░░██╗████████╗███████╗███╗░░██╗%n");
+        System.out.format(espacio+"     ██╔══██╗           ██║░░░██║██╔════╝██╔══██╗████╗░████║██║░░░██║╚══██╔══╝██╔════╝████╗░██║%n");
+        System.out.format(espacio+"     ███████║           ╚██╗░██╔╝█████╗░░██████╔╝██╔████╔██║██║░░░██║░░░██║░░░█████╗░░██╔██╗██║%n");
+        System.out.format(espacio+"     ██╔══██║           ░╚████╔╝░██╔══╝░░██╔══██╗██║╚██╔╝██║██║░░░██║░░░██║░░░██╔══╝░░██║╚████║%n");
+        System.out.format(espacio+"     ██║░░██║           ░░╚██╔╝░░███████╗██║░░██║██║░╚═╝░██║╚██████╔╝░░░██║░░░███████╗██║░╚███║%n");
+        System.out.format(espacio+"     ╚═╝░░╚═╝           ░░░╚═╝░░░╚══════╝╚═╝░░╚═╝╚═╝░░░░░╚═╝░╚═════╝░░░░╚═╝░░░╚══════╝╚═╝░░╚══╝%n");
 
     }
 
-    public static void mostar_menu()
+    public static void menu()
     {
-    System.out.println("                                         __________________________________                                                                                   |                                                                                           |" );
-  System.out.println("                                         |    ____  ____  ____  ____      |");
-  System.out.println("                                         |    ||M ||||E ||||N ||||U ||    |  ");
-  System.out.println("                                         |    ||__||||__||||__||||__||    | ");
-  System.out.println("                                         |    |/__\||/__\||/__\||/__\|    | ");
-  System.out.println("                             ____________|                                |____________");
-    imprimir("	                                 |                                                           |");
-    imprimir("	                                 |                 INGRESE UNA OPCIÓN:           		         |");
-    imprimir("	                                 |                 1. Jugar                      	           |");
-    imprimir("	                                 |                 2. Puntajes           			               |");
-    imprimir("	                                 |                 3. Escuchar               			           |");
-    imprimir("	                                 |                 4. Canciones              		             |");
-    imprimir("	                                 |                 5. Letras  		                           |");
-    imprimir("	                                 |                 6. Ayuda					                         |");
+    System.out.println("                                         __________________________________" );
+    System.out.println("                                         |    ____  ____  ____  ____      |");
+    System.out.println("                                         |    ||M ||||E ||||N ||||U ||    |  ");
+    System.out.println("                                         |    ||__||||__||||__||||__||    | ");
+    System.out.println("                                         |    |/__\\||/__\\||/__\\||/__\\|    | ");
+    System.out.println("                             ____________|                                |____________");
+    System.out.println("	                                 |                                                           |");
+    System.out.println("	                                 |                 INGRESE UNA OPCIÓN:           		         |");
+    System.out.println("	                                 |                 1. Jugar                      	           |");
+    System.out.println("	                                 |                 2. Puntajes           			               |");
+    System.out.println("	                                 |                 3. Escuchar               			           |");
+    System.out.println("	                                 |                 4. Canciones              		             |");
+    System.out.println("	                                 |                 5. Letras  		                           |");
+    System.out.println("	                                 |                 6. Ayuda					                         |");
     System.out.println("	                       |___________________________________________________________|");
 
 
     }
+}

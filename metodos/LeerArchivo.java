@@ -61,7 +61,7 @@ public class LeerArchivo
             arrTemp = temp.split(";");
             for(int j=0;j<1;j++)
             {
-                System.out.println(espacio+"Opcion "+count+" : "+arrTemp[0]);
+                System.out.println(espacio+"Opcion "+count+"  : "+arrTemp[0]);
                 count++;
                 try
                 {
@@ -78,14 +78,29 @@ public class LeerArchivo
         String[] cancion = new String[arrLetra[opcionCancion].length()];
 
         cancion = letraCancion(arrLetra,opcionCancion);
-        
-        for(int i=0;i<cancion.length;i++)
+        for(int i=0;i<cancion.length-5;i++)
         {
-            System.out.print(espacio+cancion[i]+" ");
-            System.out.println();
             try
             {
-                Thread.sleep(10);
+                if(i<5)
+                {
+                    System.out.println(espacio+cancion[i]);
+                }else{
+                    System.out.print(espacio+cancion[i]+" ");
+                    i++;
+                    Thread.sleep(100);
+                    System.out.print(cancion[i]+" ");
+                    i++;
+                    Thread.sleep(100);
+                    System.out.print(cancion[i]+" ");
+                    i++;
+                    Thread.sleep(100);
+                    System.out.print(cancion[i]+" ");
+                    i++;
+                    Thread.sleep(100);
+                    System.out.print(cancion[i]+" ");
+                    System.out.println();
+                }
             }catch(Exception error){
                 System.out.println("Error: "+error);
             }

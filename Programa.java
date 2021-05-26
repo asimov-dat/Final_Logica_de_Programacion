@@ -7,6 +7,7 @@ import metodos.Juego;
 
 public class Programa
 {
+    static String espacio = "          ";
     public static void main(String[] args)
     {
         Scanner uInput = new Scanner(System.in);
@@ -18,7 +19,7 @@ public class Programa
         Menu.mostar_bienvenida();
         Menu.mostar_menu();
         
-        System.out.print("     $ ");
+        System.out.print(espacio+espacio+espacio+"     $ ");
         opcionN = uInput.nextByte();
         if(opcionN != 127)
         {
@@ -27,9 +28,9 @@ public class Programa
                 Menu.opcion_menu(opcionN);
                 System.out.println("\n");
                 Menu.mostar_menu();
-                System.out.print("     $ ");
+                System.out.print(espacio+espacio+espacio+"     $ ");
                 opcionN = uInput.nextByte();
-            }while(opcionN != 7);
+            }while(opcionN != 5);
             
         }
         else{

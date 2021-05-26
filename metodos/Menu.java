@@ -4,48 +4,42 @@ import java.util.Scanner;
 public class Menu
 {
     String opcionS="";
+    static String espacio = "          ";
     public static void mostar_bienvenida()
     {
         String alinearIzquierda = "|  %-15s | %4-4d|%n";
-        System.out.format("     +---------------------------+%n");
-        System.out.format("     | Bienvenidos al juego Midi |%n");
-        System.out.format("     +---------------------------+%n");
-        System.out.format("     | Creadores:                |%n");
-        System.out.format("     | Angie Paola Mazo          |%n");
-        System.out.format("     | Julian Rojas              |%n");
-        System.out.format("     | David Alvarez Tamayo      |%n");
-        System.out.format("     +---------------------------+%n");
+        Ascii.bienvenida();
+        System.out.format(espacio+espacio+espacio+"     +---------------------------+%n");
+        System.out.format(espacio+espacio+espacio+"     | Creadores:                |%n");
+        System.out.format(espacio+espacio+espacio+"     | Angie Paola Mazo          |%n");
+        System.out.format(espacio+espacio+espacio+"     | Julian Rojas              |%n");
+        System.out.format(espacio+espacio+espacio+"     | David Alvarez Tamayo      |%n");
+        System.out.format(espacio+espacio+espacio+"     +---------------------------+%n");
     }
     public static void mostar_menu()
     {
-        System.out.format("     +---------------------------+%n");
-        System.out.format("     |            MENU           |%n");
-        System.out.format("     +---------------------------+%n");
-        System.out.format("     |   Opciones  |    Numero   |%n");
-        System.out.format("     +---------------------------+%n");
-        System.out.format("     |   Jugar     |      1      |%n");
-        System.out.format("     |   Puntajes  |      2      |%n");
-        System.out.format("     |   Escuchar  |      3      |%n");
-        System.out.format("     |   Canciones |      4      |%n");
-        System.out.format("     |   Letras    |      5      |%n");
-        System.out.format("     |   Ayuda     |      6      |%n");
-        System.out.format("     |   Salir     |      7      |%n");
-        System.out.format("     +---------------------------+%n");
+        System.out.format(espacio+espacio+espacio+"     +---------------------------+%n");
+        System.out.format(espacio+espacio+espacio+"     |            MENU           |%n");
+        System.out.format(espacio+espacio+espacio+"     +---------------------------+%n");
+        System.out.format(espacio+espacio+espacio+"     |   Opciones  |    Numero   |%n");
+        System.out.format(espacio+espacio+espacio+"     +---------------------------+%n");
+        System.out.format(espacio+espacio+espacio+"     |   Jugar     |      1      |%n");
+        System.out.format(espacio+espacio+espacio+"     |   Canciones |      2      |%n");
+        System.out.format(espacio+espacio+espacio+"     |   Letras    |      3      |%n");
+        System.out.format(espacio+espacio+espacio+"     |   Ayuda     |      4      |%n");
+        System.out.format(espacio+espacio+espacio+"     |   Salir     |      5      |%n");
+        System.out.format(espacio+espacio+espacio+"     +---------------------------+%n");
     }
     public static void opcion_menu(byte i)
     {
         Scanner uInput = new Scanner(System.in);
-        if (i <= 6)
+        if (i <= 5)
         {
             switch(i)
             {
                 case 1 : Juego.seleccionCancion();
                     break;
-                case 2 : System.out.println("Aqui se verian los puntajes");
-                    break;
-                case 3 : System.out.println("Aqui se escucharian los Midi");
-                    break;
-                case 4 : System.out.println(); 
+                case 2 : System.out.println(); 
                         Directorios.imprimirCarpetaCanciones();
                         System.out.println();
                         Directorios.imprimirNumeroCanciones();
@@ -58,13 +52,15 @@ public class Menu
                         byte numero = uInput.nextByte();
                         Directorios.menuCanciones(numero);
                     break;
-                case 5 : System.out.println();
+                case 3 : System.out.println();
                         LeerArchivo.imprimirListaCanciones();
                         System.out.print("     $ ");
                         int opcionLetraCancion = uInput.nextByte();
                         LeerArchivo.imprimirLetraCancion(opcionLetraCancion);
                     break;
-                case 6 : System.out.println("Aqui se mostrara la ayuda requerida por el usuario.");
+                case 4 : System.out.println("Aqui se mostrara la ayuda requerida por el usuario.");
+                    break;
+                case 5 :
                     break;
             }
         }
