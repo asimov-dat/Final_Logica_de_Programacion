@@ -41,25 +41,13 @@ public class Juego
                     respuestas3(opcionJuego3,cancion,op1,op2);
                 break;
         }
-        /*
-        System.out.println();
-        System.out.format("     +---------------------------+%n");
-        System.out.format("     |      Elija una opcion     |%n");
-        System.out.format("     +---------------------------+%n");
-        System.out.format("     |   Jugar     -->     1     |%n");
-        System.out.format("     |   Jugar     -->     2     |%n");
-        System.out.format("     |   "+cancion+"     -->     3     |%n");
-        System.out.format("     +---------------------------+%n");
-        System.out.println();
-        System.out.print(espacio+"$ ");
-        int opcionJuego = uInput.nextByte();
-        */
-       
     }
 
     public static void seleccionCancion()
     {
         LeerArchivo.imprimirListaCanciones();
+        System.out.println(espacio+"Salir : 19");
+        System.out.println();
         System.out.print("     $ ");
         int opcionLetraCancion = uInput.nextByte();
         switch(opcionLetraCancion)
@@ -68,117 +56,134 @@ public class Juego
                     do
                     {
                         LeerArchivo.imprimirLetraCancion(opcionLetraCancion,1000);
-                    }while(Audio.sequencer.isOpen());
+                    }while(Audio.sequencer.isRunning());
+                    Audio.detener();
                 break;
             case 1 : Directorios.reproducirCancion(2);
                     do
                     {
                         LeerArchivo.imprimirLetraCancion(opcionLetraCancion,1000);
-                    }while(Audio.sequencer.isOpen());
+                    }while(Audio.sequencer.isRunning());
+                    Audio.detener();
                 break;
             case 2 : Directorios.reproducirCancion(5);
                     do
                     {
                         LeerArchivo.imprimirLetraCancion(opcionLetraCancion,1000);
-                    }while(Audio.sequencer.isOpen());
+                    }while(Audio.sequencer.isRunning());
+                    Audio.detener();
                 break;
             case 3 : Directorios.reproducirCancion(1);
                     do
                     {
                         LeerArchivo.imprimirLetraCancion(opcionLetraCancion,1000);
-                    }while(Audio.sequencer.isOpen());
+                    }while(Audio.sequencer.isRunning());
+                    Audio.detener();
                 break;
             case 4 : Directorios.reproducirCancion(13);
                     do
                     {
                         LeerArchivo.imprimirLetraCancion(opcionLetraCancion,1000);
-                    }while(Audio.sequencer.isOpen());
+                    }while(Audio.sequencer.isRunning());
+                    Audio.detener();
                 break;
             case 5 : Directorios.reproducirCancion(12);
                     do
                     {
                         LeerArchivo.imprimirLetraCancion(opcionLetraCancion,1000);
-                    }while(Audio.sequencer.isOpen());
+                    }while(Audio.sequencer.isRunning());
+                    Audio.detener();
                 break;
             case 6 : Directorios.reproducirCancion(3);
                     do
                     {
                         LeerArchivo.imprimirLetraCancion(opcionLetraCancion,1000);
-                    }while(Audio.sequencer.isOpen());
+                    }while(Audio.sequencer.isRunning());
+                    Audio.detener();
                 break;
             case 7 : Directorios.reproducirCancion(7);
                     do
                     {
                         LeerArchivo.imprimirLetraCancion(opcionLetraCancion,1000);
-                    }while(Audio.sequencer.isOpen());
+                    }while(Audio.sequencer.isRunning());
+                    Audio.detener();
                 break;
             case 8 : Directorios.reproducirCancion(19);
                     do
                     {
                         LeerArchivo.imprimirLetraCancion(opcionLetraCancion,1000);
-                    }while(Audio.sequencer.isOpen());
+                    }while(Audio.sequencer.isRunning());
+                    Audio.detener();
                 break;
             case 9 : Directorios.reproducirCancion(16);
                     do
                     {
                         LeerArchivo.imprimirLetraCancion(opcionLetraCancion,1000);
-                    }while(Audio.sequencer.isOpen());
+                    }while(Audio.sequencer.isRunning());
+                    Audio.detener();
                 break;
             case 10 : Directorios.reproducirCancion(9);
                     do
                     {
                         LeerArchivo.imprimirLetraCancion(opcionLetraCancion,1000);
-                    }while(Audio.sequencer.isOpen());
+                    }while(Audio.sequencer.isRunning());
+                    Audio.detener();
                 break;
             case 11 : Directorios.reproducirCancion(6);
                     do
                     {
                         LeerArchivo.imprimirLetraCancion(opcionLetraCancion,1000);
-                    }while(Audio.sequencer.isOpen());
+                    }while(Audio.sequencer.isRunning());
+                    Audio.detener();
                 break;
             case 12 : Directorios.reproducirCancion(8);
                     do
                     {
                         LeerArchivo.imprimirLetraCancion(opcionLetraCancion,1000);
-                    }while(Audio.sequencer.isOpen());
+                    }while(Audio.sequencer.isRunning());
+                    Audio.detener();
                 break;
             case 13 : Directorios.reproducirCancion(15);
                     do
                     {
                         LeerArchivo.imprimirLetraCancion(opcionLetraCancion,1000);
-                    }while(Audio.sequencer.isOpen());
+                    }while(Audio.sequencer.isRunning());
+                    Audio.detener();
                 break;
             case 14 : Directorios.reproducirCancion(4);
                     do
                     {
                         LeerArchivo.imprimirLetraCancion(opcionLetraCancion,1000);
-                    }while(Audio.sequencer.isOpen());
+                    }while(Audio.sequencer.isRunning());
+                    Audio.detener();
                 break;
             case 15 : Directorios.reproducirCancion(10);
                     do
                     {
                         LeerArchivo.imprimirLetraCancion(opcionLetraCancion,1000);
-                    }while(Audio.sequencer.isOpen());
+                    }while(Audio.sequencer.isRunning());
+                    Audio.detener();
                 break;
             case 16 : Directorios.reproducirCancion(0);
-                    while(Audio.sequencer != null)
+                    do
                     {
                         LeerArchivo.imprimirLetraCancion(opcionLetraCancion,1000);
-                    }
+                    }while(Audio.sequencer.isRunning());
+                    Audio.detener();
                 break;
             case 17 : Directorios.reproducirCancion(14);
-                    if(Audio.sequencer != null)
+                    do
                     {
                         LeerArchivo.imprimirLetraCancion(opcionLetraCancion,1000);
-                    }else{
-                        return;
-                    }
+                    }while(Audio.sequencer.isRunning());
+                    Audio.detener();
                 break;
             case 18 : Directorios.reproducirCancion(11);
                     do
                     {
                         LeerArchivo.imprimirLetraCancion(opcionLetraCancion,1000);
-                    }while(Audio.sequencer != null);
+                    }while(Audio.sequencer.isRunning());
+                    Audio.detener();
                 break;
             case 19 :
                 break;

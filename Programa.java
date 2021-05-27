@@ -25,6 +25,7 @@ public class Programa
         {
             do 
             {
+                Audio.detener();
                 Menu.opcion_menu(opcionN);
                 System.out.println("\n");
                 Menu.mostar_menu();

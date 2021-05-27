@@ -129,36 +129,36 @@ public class LeerArchivo
                     switch(decicion)
                     {
                         case 1 : i++;
-                                        System.out.print(espacio+cancion[i]+" ");
-                                        i++;
-                                        System.out.print(cancion[i]+" ");
-                                        i++;
-                                        System.out.print(espacio+"[missing]");
-                                        opcionLetraJuego = cancion[i];
-                                        i++;
-                                        System.out.print(espacio+cancion[i]+" ");
-                                        i++;
-                                        System.out.print(cancion[i]+" ");
-                                        System.out.println();
-                                        position = Audio.pausar();
-                                        Juego.jugar(opcionLetraJuego);
-                                        Audio.continuar(position);
+                                System.out.print(espacio+cancion[i]+" ");
+                                i++;
+                                System.out.print(cancion[i]+" ");
+                                i++;
+                                System.out.print(espacio+"[missing]");
+                                opcionLetraJuego = cancion[i];
+                                i++;
+                                System.out.print(espacio+cancion[i]+" ");
+                                i++;
+                                System.out.print(cancion[i]+" ");
+                                System.out.println();
+                                position = Audio.pausar();
+                                Juego.jugar(opcionLetraJuego);
+                                Audio.continuar(position);
                             break;
                         case 2,3,4,5 : i++;
-                                        System.out.print(espacio+cancion[i]+" ");
-                                        i++;
-                                        Thread.sleep(100);
-                                        System.out.print(cancion[i]+" ");
-                                        i++;
-                                        Thread.sleep(100);
-                                        System.out.print(cancion[i]+" ");
-                                        i++;
-                                        Thread.sleep(100);
-                                        System.out.print(cancion[i]+" ");
-                                        i++;
-                                        Thread.sleep(100);
-                                        System.out.print(cancion[i]+" ");
-                                        System.out.println();
+                                System.out.print(espacio+cancion[i]+" ");
+                                i++;
+                                Thread.sleep(100);
+                                System.out.print(cancion[i]+" ");
+                                i++;
+                                Thread.sleep(100);
+                                System.out.print(cancion[i]+" ");
+                                i++;
+                                Thread.sleep(100);
+                                System.out.print(cancion[i]+" ");
+                                i++;
+                                Thread.sleep(100);
+                                System.out.print(cancion[i]+" ");
+                                System.out.println();
                             break;
                     }
                 }
@@ -166,6 +166,6 @@ public class LeerArchivo
             }catch(Exception error){
                 System.out.println("Error: "+error);
             }
-        }while(i<cancion.length-5);
+        }while(i<cancion.length-5 && Audio.sequencer.isRunning());
     }
 }

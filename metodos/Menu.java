@@ -37,7 +37,8 @@ public class Menu
         {
             switch(i)
             {
-                case 1 : Juego.seleccionCancion();
+                case 1 : Audio.detener();
+                        Juego.seleccionCancion();
                     break;
                 case 2 : System.out.println(); 
                         Directorios.imprimirCarpetaCanciones();
